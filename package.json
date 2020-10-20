@@ -1,0 +1,27 @@
+{
+  "name": "machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server --config webpack.config.js --color --progress --inline --hot",
+    "build": "webpack --config webpack.config.js --display 'verbose' --progress --profile",
+    "start": "npm run build && npm run serve",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^4.3.0",
+    "pixi-app-resizer": "0.0.0",
+    "pixi-assetslist-loader": "1.0.2",
+    "pixi.js": "5.3.0",
+    "pixi-spine": "2.1.9",
+    "typescript": "^3.9.6",
+    "webpack": "^4.44.1",
+    "gsap": "3.5.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
