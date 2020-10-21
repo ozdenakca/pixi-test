@@ -1,88 +1,116 @@
 {"frames": {
 
-"highpay1":
+"a":
 {
-	"frame": {"x":2,"y":2,"w":332,"h":324},
+	"frame": {"x":3,"y":3,"w":304,"h":307},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":332,"h":324},
-	"sourceSize": {"w":332,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
 },
-"highpay2":
+"bonus":
 {
-	"frame": {"x":338,"y":2,"w":324,"h":324},
+	"frame": {"x":1242,"y":312,"w":303,"h":306},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":306},
+	"sourceSize": {"w":303,"h":306}
 },
-"highpay3":
+"brain":
 {
-	"frame": {"x":666,"y":2,"w":324,"h":324},
-	"rotated": false,
+	"frame": {"x":942,"y":3,"w":303,"h":307},
+	"rotated": true,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":307},
+	"sourceSize": {"w":303,"h":307}
 },
-"lowpay1":
+"eye":
 {
-	"frame": {"x":2,"y":330,"w":324,"h":324},
+	"frame": {"x":3,"y":316,"w":304,"h":307},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
 },
-"lowpay2":
+"freespin":
 {
-	"frame": {"x":330,"y":330,"w":324,"h":324},
+	"frame": {"x":942,"y":625,"w":304,"h":306},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":306},
+	"sourceSize": {"w":304,"h":306}
 },
-"lowpay3":
+"j":
 {
-	"frame": {"x":658,"y":330,"w":324,"h":324},
+	"frame": {"x":933,"y":312,"w":303,"h":307},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":307},
+	"sourceSize": {"w":303,"h":307}
 },
-"lowpay4":
+"k":
 {
-	"frame": {"x":2,"y":658,"w":324,"h":324},
-	"rotated": false,
+	"frame": {"x":3,"y":629,"w":304,"h":307},
+	"rotated": true,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
 },
-"lowpay5":
+"q":
 {
-	"frame": {"x":330,"y":658,"w":324,"h":324},
+	"frame": {"x":313,"y":3,"w":304,"h":307},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":324},
-	"sourceSize": {"w":324,"h":324}
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"skull":
+{
+	"frame": {"x":313,"y":316,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
 },
 "wild":
 {
-	"frame": {"x":658,"y":658,"w":328,"h":324},
+	"frame": {"x":316,"y":629,"w":304,"h":307},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"zombie":
+{
+	"frame": {"x":623,"y":3,"w":304,"h":307},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":328,"h":324},
-	"sourceSize": {"w":328,"h":324}
-}},
-"animations": {
-	"highpay": ["highpay1","highpay2","highpay3"],
-	"lowpay": ["lowpay1","lowpay2","lowpay3","lowpay4","lowpay5"]
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
 },
+"zombie_girl":
+{
+	"frame": {"x":623,"y":316,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"zombie_guy":
+{
+	"frame": {"x":629,"y":629,"w":304,"h":307},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+}},
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "slotSymbols.png",
 	"format": "RGBA8888",
-	"size": {"w":992,"h":984},
+	"size": {"w":1548,"h":936},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:3cb169a8aeadf8207a3403754f46f9ac:80a40496aff22a52adb2c5274be250e4:2d0871772d4a0e9efb5f7ff325bc651f$"
+	"smartupdate": "$TexturePacker:SmartUpdate:44f84cd2c85469aefaad198694c2bf31:8246bbdf23021147a7e14eca903e29d6:2d0871772d4a0e9efb5f7ff325bc651f$"
 }
 }

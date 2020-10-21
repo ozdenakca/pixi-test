@@ -17,10 +17,11 @@ export class DisplayManager extends PIXI.utils.EventEmitter {
   public create() {
     this._app = new PIXI.Application({
       backgroundColor: 0x000,
-      sharedTicker: false
+      sharedTicker: false,
     });
-    this._app.ticker.add(() => {
-      this.emit(Events.UPDATE);
+    this._app.ticker.maxFPS = 60;
+    this._app.ticker.add((delta) => {
+      this.emit(Events.UPDATE, delta);
     })
     document.body.appendChild(this._app.view);
     window.addEventListener(Events.RESIZE, this.onResize.bind(this), false);
@@ -30,7 +31,7 @@ export class DisplayManager extends PIXI.utils.EventEmitter {
   }
 
   private onResize(): void {
-    const design = { width: 2073, height: 1536 };
+    const design = { width: 2048, height: 1536 };
 
     const scaleXa = window.innerWidth / design.width;
     const scaleYa = window.innerHeight / design.height;
