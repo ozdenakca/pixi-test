@@ -1,14 +1,15 @@
-export abstract class Scene extends PIXI.Container {
-  public abstract init(...args: any[]): void;
-  public abstract dispose(...args: any[]): void;
-}
+import { Game } from "../Game";
+import { Scene } from "../types/Scene";
 
-export class StageManager extends PIXI.utils.EventEmitter {
+
+export class SceneManager extends PIXI.utils.EventEmitter {
+  protected game: Game;
   private _mainContainer: PIXI.Container = new PIXI.Container();
   private _scenes: any = {};
   private _currentStage!: Scene;
-  constructor() {
+  constructor(game: Game) {
     super();
+    this.game = game;
     this._mainContainer = new PIXI.Container();
     this._mainContainer.name = "RootContainer";
   }

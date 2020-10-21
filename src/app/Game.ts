@@ -1,11 +1,11 @@
 import { DisplayManager } from "./managers/DisplayManager";
-import { StageManager } from "./managers/StageManager";
+import { SceneManager } from "./managers/SceneManager";
 import { LoaderStage } from "./scenes/Loader";
 import { ResourceLoader } from "./managers/ResourceLoader";
 
 export class Game {
   private _display: DisplayManager;
-  private _stage: StageManager;
+  private _stage: SceneManager;
   private _resource: ResourceLoader;
   private _loader: LoaderStage;
   private static _instance: Game;
@@ -16,11 +16,11 @@ export class Game {
   }
 
   private init() {
-    this._stage = new StageManager();
+    this._stage = new SceneManager(this);
     this._display = new DisplayManager(this._stage.main);
     this._display.create();
     this._resource = new ResourceLoader();
-    this._loader = new LoaderStage();
+    this._loader = new LoaderStage(this, "LoaderScene");
     this._resource.loadAsset();
     this._stage.createScene("LoaderStage", this._loader);
     this._stage.goToScene("LoaderStage", true);

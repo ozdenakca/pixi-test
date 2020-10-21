@@ -1,4 +1,8 @@
-import { Application } from "pixi.js";
+export enum Events {
+  RESIZE = "resize",
+  UPDATE = "update"
+}
+
 const SIZE = [2000, 1500];
 const RATIO = SIZE[0] / SIZE[1];
 export class DisplayManager extends PIXI.utils.EventEmitter {
@@ -13,9 +17,13 @@ export class DisplayManager extends PIXI.utils.EventEmitter {
   public create() {
     this._app = new PIXI.Application({
       backgroundColor: 0x000,
+      sharedTicker: false
     });
+    this._app.ticker.add(() => {
+      this.emit(Events.UPDATE);
+    })
     document.body.appendChild(this._app.view);
-    window.addEventListener("resize", this.onResize.bind(this), false);
+    window.addEventListener(Events.RESIZE, this.onResize.bind(this), false);
     this.onResize();
     this._mainContainer.name = "MainContainer";
     this._app.stage.addChild(this._mainContainer);
