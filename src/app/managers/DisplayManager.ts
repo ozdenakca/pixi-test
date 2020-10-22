@@ -1,6 +1,8 @@
 export enum Events {
   RESIZE = "resize",
-  UPDATE = "update"
+  UPDATE = "update",
+  SPIN_COMPLETED = "spinCompleted",
+  POINTER_DOWN = "pointerdown"
 }
 
 const SIZE = [2000, 1500];
