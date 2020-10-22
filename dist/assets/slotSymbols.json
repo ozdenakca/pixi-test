@@ -1,0 +1,116 @@
+{"frames": {
+
+"a":
+{
+	"frame": {"x":3,"y":3,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"bonus":
+{
+	"frame": {"x":1242,"y":312,"w":303,"h":306},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":306},
+	"sourceSize": {"w":303,"h":306}
+},
+"brain":
+{
+	"frame": {"x":942,"y":3,"w":303,"h":307},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":307},
+	"sourceSize": {"w":303,"h":307}
+},
+"eye":
+{
+	"frame": {"x":3,"y":316,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"freespin":
+{
+	"frame": {"x":942,"y":625,"w":304,"h":306},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":306},
+	"sourceSize": {"w":304,"h":306}
+},
+"j":
+{
+	"frame": {"x":933,"y":312,"w":303,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":307},
+	"sourceSize": {"w":303,"h":307}
+},
+"k":
+{
+	"frame": {"x":3,"y":629,"w":304,"h":307},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"q":
+{
+	"frame": {"x":313,"y":3,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"skull":
+{
+	"frame": {"x":313,"y":316,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"wild":
+{
+	"frame": {"x":316,"y":629,"w":304,"h":307},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"zombie":
+{
+	"frame": {"x":623,"y":3,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"zombie_girl":
+{
+	"frame": {"x":623,"y":316,"w":304,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+},
+"zombie_guy":
+{
+	"frame": {"x":629,"y":629,"w":304,"h":307},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":307},
+	"sourceSize": {"w":304,"h":307}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "slotSymbols.png",
+	"format": "RGBA8888",
+	"size": {"w":1548,"h":936},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:44f84cd2c85469aefaad198694c2bf31:8246bbdf23021147a7e14eca903e29d6:2d0871772d4a0e9efb5f7ff325bc651f$"
+}
+}

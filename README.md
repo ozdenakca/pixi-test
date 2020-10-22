@@ -1,1 +1,3 @@
-# pixi-base
+# test
+
+npm i & npm start

@@ -2,6 +2,8 @@ var path = require("path");
 const webpack = require("webpack");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   // Change to your "entry-point".
   entry: "./src/index.ts",
@@ -26,6 +28,11 @@ module.exports = {
     new webpack.ProvidePlugin({
       PIXI: "pixi.js",
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'assets', to: 'assets' }
+      ]
+    })
   ],
   module: {
     rules: [
@@ -33,8 +40,9 @@ module.exports = {
         // Include ts, tsx, js, and jsx files.
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
-        loader: "awesome-typescript-loader",
+        loader: "awesome-typescript-loader"
       },
+
     ],
   },
 };

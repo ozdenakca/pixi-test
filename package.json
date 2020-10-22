@@ -23,6 +23,7 @@
     "gsap": "3.5.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "pixi-particles": "4.3.0"
+    "pixi-particles": "4.3.0",
+    "copy-webpack-plugin": "6.1.1"
   }
 }
