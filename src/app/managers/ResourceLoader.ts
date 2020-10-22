@@ -9,6 +9,8 @@ export class ResourceLoader extends PIXI.utils.EventEmitter {
     this._loader = new PIXI.Loader();
     this._loader.add("background", "assets/background.jpg");
     this._loader.add("symbols", "assets/slotSymbols.json");
+    this._loader.add("coin", "assets/coin.png");
+
     this.loader.onComplete.add(() => {
       this.emit("loadcomplete");
     });

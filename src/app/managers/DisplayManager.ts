@@ -1,10 +1,4 @@
-export enum Events {
-  RESIZE = "resize",
-  UPDATE = "update",
-  SPIN_COMPLETED = "spinCompleted",
-  POINTER_DOWN = "pointerdown"
-}
-
+import { Events } from "../Events";
 const SIZE = [2000, 1500];
 const RATIO = SIZE[0] / SIZE[1];
 export class DisplayManager extends PIXI.utils.EventEmitter {
@@ -24,7 +18,8 @@ export class DisplayManager extends PIXI.utils.EventEmitter {
     this._app.ticker.maxFPS = 60;
     this._app.ticker.add((delta) => {
       this.emit(Events.UPDATE, delta);
-    })
+      this.emit(Events.FPS, delta);
+    });
     document.body.appendChild(this._app.view);
     window.addEventListener(Events.RESIZE, this.onResize.bind(this), false);
     this.onResize();
@@ -48,5 +43,9 @@ export class DisplayManager extends PIXI.utils.EventEmitter {
 
     this._mainContainer.scale.set(scale / this.resolution);
     this._mainContainer.position.set(posX * 0.5, posY * 0.5);
+  }
+
+  public get app(): PIXI.Application {
+    return this._app;
   }
 }

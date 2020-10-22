@@ -1,5 +1,5 @@
 import { Game } from "../Game";
-import { Events } from "../managers/DisplayManager";
+import { Events } from "../Events";
 import { Component } from "../types/Component";
 import { Symbol } from "./Symbol";
 import { gsap } from "gsap";
@@ -34,7 +34,6 @@ export class Reel extends Component {
             this.addChild(symbol);
         }
         this._progress = 0;
-        this.startSpin();
     }
 
     public startSpin() {
@@ -45,12 +44,13 @@ export class Reel extends Component {
         if (this.progress > MAX_PROGRESS) {
             this.game.display.off(Events.UPDATE);
             this.decelerate(Math.ceil(this.progress) - this.progress);
-        } else {
-            this.progress += SPEED;
-        }
+        } else this.progress += SPEED;
+
     }
 
     private decelerate(rProgress: number) {
+        this.emit(Events.SPIN_STOPPING);
+
         let dProgress = rProgress + 1 // delta progress
         const tProgress = dProgress + this.progress; // target progress
         let dFactor = 3.5; // decreasing factor can be adjusted by a function for slowing down or building up 
@@ -97,9 +97,8 @@ export class Reel extends Component {
                 this._symbols[i].position.y = this._symbols[i].position.y - TOTAL_HEIGHT;
                 if (this._stopping) {
                     this._symbols[i].index = DISPLAY_SYMBOLS[i];
-                } else {
-                    this._symbols[i].index = Math.floor(Math.random() * 13);
-                }
+                } else this._symbols[i].index = Math.floor(Math.random() * 13);
+
             }
         }
     }
